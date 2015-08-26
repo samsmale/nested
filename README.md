@@ -6,3 +6,5 @@ ruby class Magazine < ActiveRecord::Base   has_many :ads end   class Ad < Active
  
 ```ruby resources :articles do   resources :comments, shallow: true end ```
 ```ruby scope shallow_path: "sekret" do   resources :articles do     resources :comments, shallow: true   end end 
+
+http://guides.rubyonrails.org/routing.html#nested-resources
