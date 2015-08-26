@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+<h2><%= link_to post.title, sekret_post_path(post.id) %></h2>
+<h3>By: <%= post.author.name %></h3>
+<p><%= post.content %></p>
+<img src="<%=post.image_url%>">
+<%end%>
