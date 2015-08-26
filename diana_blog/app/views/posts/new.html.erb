@@ -2,6 +2,5 @@
     <%= f.text_field :title, placeholder: 'Title' %><br>
     <%= f.text_field :content, placeholder: 'Content' %><br>
     <%= f.text_field :image_url, placeholder: 'Image URL' %><br>
- 		<%= f.collection_select(:author_id, Author.all, :id, :name) %>
     <%= f.submit %>
 <% end %>

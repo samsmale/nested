@@ -1,6 +1,7 @@
 <%= form_for edit_sekret_post_path do |f| %>
-    <%= f.text_field :title, placeholder: 'Title' %><br>
-    <%= f.text_field :content, placeholder: 'Content' %><br>
-    <%= f.text_field :image_url, placeholder: 'Image URL' %><br>
+    <%= f.text_field :title, value: @post.title %><br>
+    <%= f.text_field :content, value: @post.content %><br>
+    <%= f.text_field :image_url, value: @post.image_url %><br>
+    <%= f.text_field :author_id, value: @post.author_id %><br>
     <%= f.submit %>
 <% end %>

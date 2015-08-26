@@ -1,0 +1,5 @@
+<%= form_for @author do |f| %>
+    <%= f.text_field :name, value: @author.name %><br>
+    <%= f.text_field :email, value: @author.email %><br>
+    <%= f.submit %>
+<% end %>

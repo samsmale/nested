@@ -1,0 +1,8 @@
+<h2><%= @author.name %></h2>
+<p><%= @author.email%></p>
+
+
+<%= link_to 'Edit This author', edit_author_path %>
+<%= link_to 'Delete This author', author_path, method: :delete %>
+<%= link_to 'Add a post', new_author_post_path(@author.id) %>
+
